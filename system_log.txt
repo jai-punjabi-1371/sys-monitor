@@ -96,3 +96,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7310.6 avail Mem
       6 root      20   0    3088   1792   1792 S   0.0   0.0   0:00.00 init
 
 
+===== Fri Aug  8 12:49:50 IST 2025 =====
+  331  cd ..
+  332  cd dir2
+  333  ls
+  334  cd ..
+  335  ls
+  336  mkdir n_question
+  337  cd n_question/
+  338  touch input_file.txt
+  339  touch output_file.txt
+  340  nano input_file.txt
+  341  cat input_file
+  342  cat input_file.txt
+  343  cat output_file.txt
+  344  touch shift_n_lines.sh
+  345  nano shift_n_lines.sh 
+  346  chmod +x shift_n_lines.sh
+  347  ./shift_n_lines.sh input_file.txt output_file.txt 4
+  348  nano input_file.txt 
+  349  nano output_file.txt 
+  350  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 12:49:50 up 31 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  40 total,   1 running,  39 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7264.1 free,    351.9 used,    196.3 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7308.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  169924  10744   8056 S   0.0   0.1   0:00.84 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-systemd(Ub
+      6 root      20   0    3088   1792   1792 S   0.0   0.0   0:00.00 init
+
+
