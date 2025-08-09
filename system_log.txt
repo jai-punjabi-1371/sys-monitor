@@ -878,3 +878,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7314.6 avail Mem
       6 root      20   0    3088   1792   1792 S   0.0   0.0   0:00.01 init
 
 
+===== Sat Aug  9 23:40:01 IST 2025 =====
+  919  echo -e "\n" >> "$LOG_FILE"
+  920  # Push to GitHub
+  921  cd "$REPO_DIR"
+  922  git add system_log.txt
+  923  git commit -m "Update log at $(date)"
+  924  git push origin main
+  925  git push origin main
+  926  history | tail -n 20 >> "$LOG_FILE"
+  927  # CPU & RAM usage
+  928  echo "---- CPU & RAM Usage ----" >> "$LOG_FILE"
+  929  top -b -n 1 | head -n 10 >> "$LOG_FILE"
+  930  echo -e "\n" >> "$LOG_FILE"
+  931  # Push to GitHub
+  932  cd "$REPO_DIR"
+  933  git add system_log.txt
+  934  git commit -m "Update log at $(date)"
+  935  git push origin main
+  936  clear
+  937  git --version
+  938  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 23:40:01 up 3 min,  1 user,  load average: 0.01, 0.02, 0.00
+Tasks:  39 total,   1 running,  38 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.8 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   6905.2 free,    349.9 used,    557.1 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7310.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    301 root      20   0  241056   8768   8000 S   6.7   0.1   0:00.04 account+
+      1 root      20   0  169916  10616   7928 S   0.0   0.1   0:00.70 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
+
+
