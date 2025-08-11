@@ -1694,3 +1694,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7296.0 avail Mem
       6 root      20   0    3088   1792   1792 S   0.0   0.0   0:00.00 init
 
 
+===== Mon Aug 11 17:55:01 IST 2025 =====
+  983  zip project.zip file1.txt file2.txt
+  984  sudo apt install zip
+  985  clear
+  986  rm file1.txt
+  987  rm file2.txt
+  988  ls -a
+  989  clear
+  990  touch file1.txt
+  991  touch file2.txt
+  992  zip project.zip file1.txt file2.txt
+  993  gzip file1.txt
+  994  gunzip file1.gz
+  995  ls -a
+  996  gunzip file1.txt.gz
+  997  ls -a
+  998  unzip project.zip
+  999  yum search python3
+ 1000  sudo yum search python3
+ 1001  clear
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 17:55:01 up  4:15,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  40 total,   1 running,  39 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7022.2 free,    372.2 used,    417.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7284.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170004  10872   8184 S   0.0   0.1   0:01.18 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.03 init-sy+
+      6 root      20   0    3088   1792   1792 S   0.0   0.0   0:00.00 init
+
+
