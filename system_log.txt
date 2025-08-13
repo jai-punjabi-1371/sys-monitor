@@ -2068,3 +2068,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7305.3 avail Mem
       6 root      20   0    3088   1876   1792 S   0.0   0.0   0:00.01 init
 
 
+===== Wed Aug 13 14:55:01 IST 2025 =====
+  983  clear
+  984  ssh -i "jai_punjabi_aws.pem" ec2-user@ec2-51-20-67-96.eu-north-1.compute.amazonaws.com
+  985  cd dir1/
+  986  cd dir1/
+  987  history | tail -n 20 >> "$LOG_FILE"
+  988  # CPU & RAM usage
+  989  echo "---- CPU & RAM Usage ----" >> "$LOG_FILE"
+  990  top -b -n 1 | head -n 10 >> "$LOG_FILE"
+  991  echo -e "\n" >> "$LOG_FILE"
+  992  # Push to GitHub
+  993  cd "$REPO_DIR"
+  994  git add system_log.txt
+  995  git commit -m "Update log at $(date)"
+  996  git push origin main
+  997  ssh -i "jai_punjabi_aws.pem" ec2-user@ec2-51-20-67-96.eu-north-1.compute.amazonaws.com
+  998  ssh -i "jai_punjabi_aws.pem" ec2-user@ec2-51-20-67-96.eu-north-1.compute.amazonaws.com
+  999  clear
+ 1000  ssh -i "jai_punjabi_aws.pem" ec2-user@ec2-13-51-238-143.eu-north-1.compute.amazonaws.com
+ 1001  clear
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 14:55:01 up  1:35,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  40 total,   1 running,  39 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.8 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7233.2 free,    365.6 used,    213.4 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7294.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  169896  10736   8048 S   0.0   0.1   0:00.90 systemd
+      2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.01 init-sy+
+      6 root      20   0    3088   1876   1792 S   0.0   0.0   0:00.01 init
+
+
