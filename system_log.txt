@@ -2238,3 +2238,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7252.4 avail Mem
       2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.05 init-sy+
 
 
+===== Wed Aug 13 17:00:01 IST 2025 =====
+  983  wc order.csv
+  984  ping youtube.com
+  985  crontab -l
+  986  cd ..
+  987  cd dir1/
+  988  ls
+  989  cat file1.txt
+  990  grep -i "Hellooooooo" file1.txt
+  991  grep -i "Hellooooooo" file1.txt
+  992  history | tail -n 20 >> "$LOG_FILE"
+  993  # CPU & RAM usage
+  994  echo "---- CPU & RAM Usage ----" >> "$LOG_FILE"
+  995  top -b -n 1 | head -n 10 >> "$LOG_FILE"
+  996  echo -e "\n" >> "$LOG_FILE"
+  997  # Push to GitHub
+  998  cd "$REPO_DIR"
+  999  git add system_log.txt
+ 1000  git commit -m "Update log at $(date)"
+ 1001  git push origin main
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 17:00:01 up  3:29,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  46 total,   1 running,  45 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7181.2 free,    409.2 used,    221.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7251.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  169896  10736   8048 S   0.0   0.1   0:01.04 systemd
+      2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.05 init-sy+
+      6 root      20   0    3104   1864   1792 S   0.0   0.0   0:00.06 init
+
+
