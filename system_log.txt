@@ -2204,3 +2204,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7254.8 avail Mem
       2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.05 init-sy+
 
 
+===== Wed Aug 13 16:55:01 IST 2025 =====
+  983  git commit -m "Update log at $(date)"
+  984  git push origin main
+  985  echo "Welcome to AWS Linux"
+  986  pwd
+  987  cd dir1/
+  988  ls
+  989  cd ..
+  990  ls
+  991  cd vi_editing/
+  992  pwd
+  993  wc order.txt
+  994  wc order.csv
+  995  ping youtube.com
+  996  crontab -l
+  997  cd ..
+  998  cd dir1/
+  999  ls
+ 1000  cat file1.txt
+ 1001  grep -i "Hellooooooo" file1.txt
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 16:55:01 up  3:24,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  46 total,   1 running,  45 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7182.7 free,    407.9 used,    221.7 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7252.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1613 jai-pun+  20   0   10872   3712   3200 R   6.2   0.0   0:00.01 top
+      1 root      20   0  169896  10736   8048 S   0.0   0.1   0:01.03 systemd
+      2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.05 init-sy+
+
+
