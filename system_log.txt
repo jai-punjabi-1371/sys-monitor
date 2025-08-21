@@ -2816,3 +2816,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7279.9 avail Mem
       6 root      20   0    3088   1888   1792 S   0.0   0.0   0:00.00 init
 
 
+===== Thu Aug 21 12:55:01 IST 2025 =====
+  983  cd c
+  984  ls
+  985  cd users
+  986  ls
+  987  cd jai.punjabi/
+  988  ls
+  989  cd downloads
+  990  ls
+  991  mkdir terraform
+  992  cd terraform/
+  993  wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+  994  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+  995  terraform -- version
+  996  terraform --version
+  997  sudo apt update && sudo apt install terraform
+  998  terraform --version
+  999  sudo snap install terraform
+ 1000  sudo snap install terraform --classic
+ 1001  terraform --version
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 12:55:01 up 7 min,  1 user,  load average: 0.02, 0.01, 0.00
+Tasks:  43 total,   1 running,  42 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   6410.3 free,    393.0 used,   1008.9 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7263.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  171312  11768   7928 S   0.0   0.1   0:00.61 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3088   1912   1792 S   0.0   0.0   0:00.00 init
+
+
