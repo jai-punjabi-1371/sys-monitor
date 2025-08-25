@@ -3224,3 +3224,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7253.0 avail Mem
       6 root      20   0    3088   1888   1792 S   0.0   0.0   0:00.00 init
 
 
+===== Mon Aug 25 15:55:01 IST 2025 =====
+  983  aws --version
+  984  aws
+  985  aws configure
+  986  aws
+  987  aws configure list
+  988  cd terraform/
+  989  ls
+  990  touch main.tf
+  991  nano main.tf 
+  992  ls
+  993  terraform init
+  994  terraform plan
+  995  nano main.tf 
+  996  terraform plan
+  997  terraform apply
+  998  terraform plan
+  999  terraform apply
+ 1000  terrform destroy
+ 1001  terraform destroy
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 15:55:02 up 35 min,  1 user,  load average: 0.02, 0.01, 0.00
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7220.3 free,    398.1 used,    193.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7250.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170072  10492   7932 S   0.0   0.1   0:00.74 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
+      6 root      20   0    3088   1916   1792 S   0.0   0.0   0:00.00 init
+
+
