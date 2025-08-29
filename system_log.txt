@@ -4074,3 +4074,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7259.9 avail Mem
       6 root      20   0    3108   1924   1792 S   0.0   0.0   0:01.20 init
 
 
+===== Fri Aug 29 15:00:01 IST 2025 =====
+  983  mkdir alarm_metric
+  984  cd alarm_metric/
+  985  touch main.tf
+  986  touch main.tf
+  987  history | tail -n 20 >> "$LOG_FILE"
+  988  # CPU & RAM usage
+  989  echo "---- CPU & RAM Usage ----" >> "$LOG_FILE"
+  990  top -b -n 1 | head -n 10 >> "$LOG_FILE"
+  991  echo -e "\n" >> "$LOG_FILE"
+  992  # Push to GitHub
+  993  cd "$REPO_DIR"
+  994  git add system_log.txt
+  995  git commit -m "Update log at $(date)"
+  996  git push origin main
+  997  nano main.tf 
+  998  terraform init
+  999  terraform plan
+ 1000  nano main.tf 
+ 1001  terraform plan
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 15:00:02 up  8:52,  1 user,  load average: 0.07, 0.10, 0.03
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   6324.0 free,    397.4 used,   1090.7 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7261.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170080  10740   8052 S   0.0   0.1   0:03.50 systemd
+      2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.31 init-sy+
+      6 root      20   0    3108   1924   1792 S   0.0   0.0   0:01.20 init
+
+
