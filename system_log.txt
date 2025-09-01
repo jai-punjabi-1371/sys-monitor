@@ -4108,3 +4108,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7261.2 avail Mem
       6 root      20   0    3108   1924   1792 S   0.0   0.0   0:01.20 init
 
 
+===== Mon Sep  1 11:55:02 IST 2025 =====
+  983  # Push to GitHub
+  984  cd "$REPO_DIR"
+  985  git add system_log.txt
+  986  git commit -m "Update log at $(date)"
+  987  git push origin main
+  988  nano main.tf 
+  989  terraform plan
+  990  nano main.tf 
+  991  terraform plan
+  992  terraform apply
+  993  nano main.tf 
+  994  terraform plan
+  995  terraform apply
+  996  nano main.tf 
+  997  terraform plan
+  998  terraform apply
+  999  nano main.tf 
+ 1000  terraform plan
+ 1001  terraform apply
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 11:55:02 up  9:53,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7241.6 free,    397.6 used,    173.0 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7260.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170080  10740   8052 S   0.0   0.1   0:04.25 systemd
+      2 root      20   0    3060   1792   1792 S   0.0   0.0   0:00.39 init-sy+
+      6 root      20   0    3108   1924   1792 S   0.0   0.0   0:01.20 init
+
+
