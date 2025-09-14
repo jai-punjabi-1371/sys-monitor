@@ -4448,3 +4448,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7263.6 avail Mem
       6 root      20   0    3108   1924   1792 S   0.0   0.0   0:01.20 init
 
 
+===== Sun Sep 14 09:55:01 IST 2025 =====
+  983  ls -h
+  984  mkdir sample_dir
+  985  ls -lh
+  986  find . -abc123.txt
+  987  find . abc123.txt
+  988  find . -size 28M
+  989  find . -size 4k
+  990  find . -type f
+  991  find . -type d
+  992  find . def123.txt
+  993  find . -size 28c
+  994  find . -name abc123.txt
+  995  find . -name Abc123.txt
+  996  find . -iname Abc123.txt
+  997  find . -user root
+  998  find . -user jai-punjabi-1371
+  999  ls -ltr
+ 1000  ls -li
+ 1001  find . -inum 60157
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 09:55:01 up 21 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  43 total,   1 running,  42 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7234.1 free,    380.4 used,    197.7 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7273.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  171344  12284   8188 S   0.0   0.2   0:01.03 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.01 init-sy+
+      6 root      20   0    3088   1792   1792 S   0.0   0.0   0:00.00 init
+
+
