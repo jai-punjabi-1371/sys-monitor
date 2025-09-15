@@ -5026,3 +5026,37 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7290.5 avail Mem
       6 root      20   0    3088   1916   1792 S   0.0   0.0   0:00.00 init
 
 
+===== Mon Sep 15 14:00:55 IST 2025 =====
+  983  cd Downloads/
+  984  ls
+  985  pwd
+  986  clear
+  987  scp /mnt/c/Users/jai.punjabi/Downloads/test-instance.pem /home/jai-punjabi-1371/viva
+  988  ls
+  989  chmod 400 test-instance.pem 
+  990  cd viva/
+  991  pwd
+  992  cd ..
+  993  ls -l
+  994  whoami
+  995  df -h
+  996  free -m
+  997  cd ~
+  998  cd ..
+  999  touch file1.txt
+ 1000  find /home -type f -iname "*linux*"
+ 1001  ssh -i test-instance.pem ubuntu@18.130.244.26
+ 1002  history | tail -n 20 >> "$LOG_FILE"
+---- CPU & RAM Usage ----
+top - 14:00:55 up  8:20,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  53 total,   1 running,  52 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7812.2 total,   7199.8 free,    397.1 used,    215.3 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7261.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  170072  10752   7936 S   0.0   0.1   0:00.82 systemd
+      2 root      20   0    3060   1664   1664 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3088   1944   1792 S   0.0   0.0   0:00.00 init
+
+
